@@ -18,7 +18,6 @@ fp1 = dbeta(p, 5, 25)
 fp2 = dbeta(p, 10, 25)
 fp3 = dbeta(p, 15, 25)
 
-
 for (i in 1:(m + 1)) {
     L1[i] = sum(dbinom(k[i], m, p) * fp1 * h)
     L2[i] = sum(dbinom(k[i], m, p) * fp2 * h)
@@ -28,7 +27,6 @@ for (i in 1:(m + 1)) {
 plot(k, L1, type = "l", col = "blue", lwd = 2, xlab = "", ylab = "")
 lines(k, L2, col = "blue", lwd = 2)
 lines(k, L3, col = "blue", lwd = 2)
-
 
 fp4 = dbeta(p, 5, 45)
 fp5 = dbeta(p, 10, 90)
