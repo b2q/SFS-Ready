@@ -116,15 +116,15 @@ e2_dax = acf(daxretlog^2, main = "ACF of squared returns DAX", col = "red3")
 e2_dow = acf(dowretlog^2, main = "ACF of squared returns Dow Jones", col = "blue3")
 
 # Kernel Density Estimation DAX
-f1 		= daxretlog
-fdax 	= bkde(daxretlog, kernel = "biweight")  #Compute kernel density estimate
+f1    = daxretlog
+fdax  = bkde(daxretlog, kernel = "biweight")  #Compute kernel density estimate
 par(mfrow = c(2, 1))
 plot(fdax, type = "l", lwd = 2, col = "red3", ylab = "", xlab = "", axes = FALSE, 
     frame = TRUE, xlim = c(-0.1, 0.1), ylim = c(0, 30), main = "Kernel density estimation DAX")
-f2 		= daxretlog
-range 	= seq(-0.1, 0.1, by = 0.001)
-m 		= mean(f2)
-sdd 	= sd(c(f2))
+f2    = daxretlog
+range = seq(-0.1, 0.1, by = 0.001)
+m     = mean(f2)
+sdd   = sd(c(f2))
 lines(range, dnorm(range, m, sdd), lty = "dotted", lwd = 2, col = "grey3")
 
 abline(h = seq(0, 40, by = 10), lty = "dotted", lwd = 0.5, col = "grey")
@@ -133,13 +133,13 @@ axis(side = 2, at = seq(0, 40, by = 10), label = seq(0, 40, by = 10), lwd = 1)
 axis(side = 1, at = seq(-0.1, 0.1, 0.05), label = seq(-0.1, 0.1, 0.05), lwd = 0.5)
 
 # Kernel Density Estimation Dow
-fdow 	= bkde(dowretlog, kernel = "biweight")  #Compute kernel density estimate
+fdow  = bkde(dowretlog, kernel = "biweight")  #Compute kernel density estimate
 plot(fdow, type = "l", lwd = 2, col = "blue3", ylab = "", xlab = "", axes = FALSE, 
     frame = TRUE, xlim = c(-0.1, 0.1), ylim = c(0, 40), main = "Kernel density estimation Dow Jones")
-f3 		= dowretlog
-range 	= seq(-0.1, 0.1, by = 0.001)
-m 		= mean(f3)
-sdd 	= sd(c(f3))
+f3    = dowretlog
+range = seq(-0.1, 0.1, by = 0.001)
+m     = mean(f3)
+sdd   = sd(c(f3))
 lines(range, dnorm(range, m, sdd), lty = "dotted", lwd = 2, col = "grey3")
 
 abline(h = seq(0, 40, by = 10), lty = "dotted", lwd = 0.5, col = "grey")
