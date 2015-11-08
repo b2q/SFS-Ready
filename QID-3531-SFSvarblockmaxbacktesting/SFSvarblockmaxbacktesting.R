@@ -24,11 +24,11 @@ d = dim(V)
 L = V[-1, ] - V[1:(d[1] - 1), ]
 T = length(L)
 
-outlier 	= matrix(, 1, T - h)
-exceedVaR 	= matrix(, , )
+outlier   = matrix(, 1, T - h)
+exceedVaR = matrix(, , )
 
 # Check for exceedances
-exceedVaR 	= (L[(1 + h):(d[1] - 1)] < v[1:(T - h)])  
+exceedVaR = (L[(1 + h):(d[1] - 1)] < v[1:(T - h)])  
 
 # Find exceedances
 for (j in 1:(T - h)) {
