@@ -30,13 +30,13 @@ SFSIBTdk = function(s0, r, t, n, func) {
         print("n=")
         n = scan()
     }
-    dt 			= t/n
-    Smat 		= matrix(0, n + 1, n + 1)  	# Stock price at nodes
-    Smat[1, 1] 	= s0  						# First node equals the underlying price
-    ADmat 		= matrix(0, n + 1, n + 1)  	# Arrow-Debreu prices
-    ADmat[1, 1] = 1  						# First Arrow-Debreu price equals 1
-    pmat 		= matrix(0, n, n)  			# Transition probabilites
-    infl 		= exp(r * dt)
+    dt          = t/n
+    Smat        = matrix(0, n + 1, n + 1)   # Stock price at nodes
+    Smat[1, 1]  = s0                        # First node equals the underlying price
+    ADmat       = matrix(0, n + 1, n + 1)   # Arrow-Debreu prices
+    ADmat[1, 1] = 1                         # First Arrow-Debreu price equals 1
+    pmat        = matrix(0, n, n)           # Transition probabilites
+    infl        = exp(r * dt)
     
     for (i in seq(1, n)) {
         # Step 1 : Find central nodes of stock tree 
@@ -52,8 +52,8 @@ SFSIBTdk = function(s0, r, t, n, func) {
         } else {
             # (i+1) is even find the upper and the lower node
             mi = round((i + 1)/2)
-            Call_Put_Flag = 1  	# 1 for call/0 for put
-            S = Smat[mi, i]  	# S_n^i
+            Call_Put_Flag = 1   # 1 for call/0 for put
+            S = Smat[mi, i]     # S_n^i
             sigma = IBTimpliedvola(s0, S, i * dt, func)  # func=1 for interpolation, else a parabola
             C = IBTcrr(s0, S, r, sigma, i * dt, i, Call_Put_Flag)  # Call price from BS model
             rho_u = 0
@@ -89,9 +89,9 @@ SFSIBTdk = function(s0, r, t, n, func) {
                 }
             }
             Smat[mi + 1, i + 1] = Su
-            Smat[mi, i + 1] 	= Sl
-            lnode 				= mi + 1
-            llnode 				= mi
+            Smat[mi, i + 1] = Sl
+            lnode  = mi + 1
+            llnode = mi
         }
         
         # Step 2 : Find upper nodes of stock tree 
