@@ -5,10 +5,9 @@ Keywords: asset, binomial, binomial-tree, black-scholes, call, discrete, financi
 See also: IBTblackscholes, IBTcrr, IBTimpliedvola, SFSBSCopt1, SFSIBTbc
 Submitted: Mon, August 03 2015 by quantomas
 Input:
-- s0 - price of underlying asset
-- r - interest rate
-- t - time to expiration
-- n - number of steps
-- func - type of function for implied volatility
+- s0 : price of underlying asset
+- r : interest rate
+- t : time to expiration
+- n : number of steps
+- func : type of function for implied volatility
 Example: 'out = SFSIBTdk(100, 0.05, 3, 3, 2)'
-
