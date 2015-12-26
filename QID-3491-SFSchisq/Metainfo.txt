@@ -5,5 +5,5 @@ Keywords: chi-square, density, distribution, graphical representation, pdf, plot
 Author: Awdesch Melzer
 Submitted: Sun, August 02 2015 by quantomas
 Example:
-- 'Chi-squared pdf plot for df=1.'
-- 'Chi-squared pdf plot for df=5.'
+- 1: 'Chi-squared pdf plot for df=1.'
+- 2: 'Chi-squared pdf plot for df=5.'
