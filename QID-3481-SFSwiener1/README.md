@@ -11,7 +11,8 @@ Keywords: brownian-motion, continuous, graphical representation, plot, process, 
 See also: SFSwiener2, SFSwiener3
 Author: Lasse Groth
 Submitted: Wed, July 29 2015 by quantomas
-Input: 'dt - delta t'
+Input: 
+- dt : delta t
 Example: 'Plot of a Wiener process W_t for dt=0.001.'
 ```
 
