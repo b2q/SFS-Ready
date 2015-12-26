@@ -6,6 +6,6 @@ See also: SFSwiener1, SFSwiener1, SFSwiener2
 Author: Lasse Groth
 Submitted: Wed, July 29 2015 by quantomas
 Input:
-- T - initial number of periods
-- t - number of periods after T
+- T : initial number of periods
+- t : number of periods after T
 Example: 'Plot of a Wiener process Y_t for T=100, t=50.'
