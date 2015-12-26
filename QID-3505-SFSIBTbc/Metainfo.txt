@@ -6,9 +6,9 @@ See also: IBTblackscholes, IBTcrr, IBTimpliedvola, SFSBSCopt1, SFSIBTdk, SFSIBTd
 Author: Jun Zheng, Alena Mysickova, Wolfgang K. Haerdle
 Submitted: Mon, August 03 2015 by quantomas
 Input:
-- s0 - price of underlying asset
-- r - interest rate
-- t - time to expiration
-- n - number of steps
-- func - type of function for implied volatility
+- s0 : price of underlying asset
+- r : interest rate
+- t : time to expiration
+- n : number of steps
+- func : type of function for implied volatility
 Example: out = SFSIBTbc(100, 0.05, 3, 3, 2)
