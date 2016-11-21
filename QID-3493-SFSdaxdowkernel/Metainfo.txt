@@ -4,6 +4,6 @@ Description: 'Plots density functions of DAX (upper panel) and Dow Jones (lower 
 Keywords: data visualization, dax, density, dow-jones, estimation, financial, gaussian, graphical representation, index, kernel, log-returns, nonparametric, nonparametric estimation, normal, plot, time-series, visualization
 See also: SFStimeseries, SFStimeseries
 Submitted: Sun, August 02 2015 by quantomas
-Author: 'Szymon Borak, Wolfgang K. Härdle, Brenda López Cabrera'
+Author: 'Szymon Borak, Wolfgang K. HÃ¤rdle, Brenda LÃ³pez Cabrera'
 Datafile: daxdow.txt
 Example: 'Kernel density estimates of DAX and Dow Jones using the data from the period from 1997 to 2004.'

@@ -2,5 +2,5 @@ Name of QuantLet : SFShullhedgeratio
 Published in: SFS
 Description: 'Calculates the performance measure of a Stop-Loss strategy for an increasing hedging frequency delta_t.'
 Keywords: asset, black-scholes, call, delta, european-option, financial, hedging, option, option-price, price, simulation, stock-price
-Author: 'Szymon Borak, Wolfgang K. Härdle, Brenda López Cabrera'
+Author: 'Szymon Borak, Wolfgang K. HÃ¤rdle, Brenda LÃ³pez Cabrera'
 Submitted: Mon, August 03 2015 by quantomas
