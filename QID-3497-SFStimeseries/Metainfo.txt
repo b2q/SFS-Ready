@@ -4,4 +4,5 @@ Description: 'Performs an empirical analysis using the data on DAX and Dow Jones
 Keywords: acf, data visualization, dax, density, dow-jones, estimation, financial, graphical representation, index, kernel, log-returns, plot, returns, squared, time-series
 See also: SFSdaxdowkernel
 Submitted: Mon, August 03 2015 by quantomas
+Author: 'Szymon Borak, Wolfgang K. Härdle, Brenda López Cabrera'
 Datafiles: daxdow.txt
